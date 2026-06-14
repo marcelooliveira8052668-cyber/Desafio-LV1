@@ -1,0 +1,128 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* TAG PERSONALIZADA */
+tag{
+    display: block;
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* TÍTULOS */
+h1{
+    color: #2563eb;
+    margin-top: 20px;
+}
+
+h2{
+    color: #16a34a;
+    margin-top: 15px;
+}
+
+h3{
+    color: #dc2626;
+}
+
+h4{
+    color: #9333ea;
+}
+
+h5{
+    color: #ea580c;
+}
+
+h6{
+    color: #64748b;
+}
+
+/* PARÁGRAFOS */
+p{
+    margin: 10px 0;
+}
+
+/* TAGS PERSONALIZADAS */
+pai{
+    display: block;
+    background: white;
+    border-left: 5px solid #2563eb;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+filho{
+    display: block;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* NEGRITO E ITÁLICO */
+b, strong{
+    color: #dc2626;
+}
+
+i{
+    color: #16a34a;
+}
+
+/* LINHA */
+hr{
+    margin: 20px 0;
+    border: none;
+    height: 2px;
+    background: #ccc;
+}
+
+/* IMAGEM */
+img{
+    display: block;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
+
+/* ÁUDIO E VÍDEO */
+audio,
+video{
+    display: block;
+    margin: 20px 0;
+    max-width: 100%;
+}
+
+/* CANVAS */
+canvas{
+    display: block;
+    margin: 20px 0;
+    border: 3px solid #2563eb;
+    background: white;
+    border-radius: 10px;
+}
+
+/* DIV */
+div{
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
