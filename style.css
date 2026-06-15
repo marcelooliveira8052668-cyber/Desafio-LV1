@@ -14,8 +14,8 @@ body{
     line-height: 1.6;
 }
 
-/* TAG PERSONALIZADA */
-tag{
+/* ⚠️ DE: tag {} PARA: .tag-destaque {} (Virou classe) */
+.tag-destaque{
     display: block;
     background: #2563eb;
     color: white;
@@ -28,39 +28,20 @@ tag{
 }
 
 /* TÍTULOS */
-h1{
-    color: #2563eb;
-    margin-top: 20px;
-}
-
-h2{
-    color: #16a34a;
-    margin-top: 15px;
-}
-
-h3{
-    color: #dc2626;
-}
-
-h4{
-    color: #9333ea;
-}
-
-h5{
-    color: #ea580c;
-}
-
-h6{
-    color: #64748b;
-}
+h1{ color: #2563eb; margin-top: 20px; }
+h2{ color: #16a34a; margin-top: 15px; }
+h3{ color: #dc2626; }
+h4{ color: #9333ea; }
+h5{ color: #ea580c; }
+h6{ color: #64748b; }
 
 /* PARÁGRAFOS */
 p{
     margin: 10px 0;
 }
 
-/* TAGS PERSONALIZADAS */
-pai{
+/* ⚠️ DE: pai {} PARA: .card-pai {} (Virou classe) */
+.card-pai{
     display: block;
     background: white;
     border-left: 5px solid #2563eb;
@@ -69,7 +50,8 @@ pai{
     border-radius: 8px;
 }
 
-filho{
+/* ⚠️ DE: filho {} PARA: .texto-filho {} (Virou classe) */
+.texto-filho{
     display: block;
     color: #2563eb;
     font-weight: bold;
@@ -102,8 +84,7 @@ img{
 }
 
 /* ÁUDIO E VÍDEO */
-audio,
-video{
+audio, video{
     display: block;
     margin: 20px 0;
     max-width: 100%;
@@ -118,7 +99,7 @@ canvas{
     border-radius: 10px;
 }
 
-/* DIV */
+/* DIV GLOBAL */
 div{
     background: white;
     padding: 15px;

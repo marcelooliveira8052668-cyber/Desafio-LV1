@@ -1,25 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ativos de Investimentos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilização básica para organizar o layout igual ao desafio */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Linha que segura os botões E o input lado a lado */
+    .topo-controle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    #container-botoes {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* O container dos cards em formato de Grid (3 por linha no computador) */
+    #container-ativos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .botao-principal {
+      display: block;
+      margin: 30px auto; /* Centraliza o botão Ver Mais no fundo */
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
   <h1>Ativos de Investimentos Brasileiros</h1>
   
-  <div id="container-botoes" style="margin: 20px; display: flex; gap: 10px;"></div>
+  <div class="topo-controle">
+    <div id="container-botoes"></div>
+    
+    <input 
+      type="text" 
+      id="input-busca" 
+      placeholder="busca livre por texto" 
+      style="padding: 8px; width: 250px; border-radius: 4px; border: 1px solid #ccc;"
+    />
+  </div>
   
   <div id="container-ativos"></div>
 
-  <button id="botao-ver-mais" style="padding: 10px 20px; font-size: 16px; margin: 20px; cursor: pointer;">
+  <button id="botao-ver-mais" class="botao-principal">
     Ver Mais
   </button>
 
   <script src="script.js"></script>
-</body>
-
 </body>
 </html>
