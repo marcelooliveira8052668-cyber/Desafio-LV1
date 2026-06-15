@@ -1,71 +1,75 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+  
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Ativos de Investimentos</title>
+  
   <link rel="stylesheet" href="style.css">
+  
   <style>
+    /* Isso é um comentário de estilo. O computador pula isso, serve só para nós lermos. */
     /* Estilização básica para organizar o layout igual ao desafio */
+    
+    /* Aqui vamos decorar o "body" (o corpo), que é o fundo de todo o site */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 20px;
+      font-family: Arial, sans-serif; /* Escolhe uma letra bem limpa e bonita para os textos */
+      background-color: #f4f4f4;      /* Pinta o fundo do site com um cinza bem clarinho */
+      margin: 0;                      /* Tira as bordinhas brancas chatas dos cantos da tela */
+      padding: 20px;                  /* Deixa um espaço de segurança para o conteúdo não colar na parede da tela */
     }
 
-    /* Linha que segura os botões E o input lado a lado */
+    /* Aqui vamos organizar a salinha do topo, onde ficam os botões e a barra de busca */
     .topo-controle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 20px;
+      display: flex;                  /* Ativa o modo "organização elástica", que ajuda a alinhar as coisas */
+      justify-content: space-between; /* Empurra os botões para a esquerda e a busca para a direita, deixando um espaço no meio */
+      align-items: center;            /* Deixa todo mundo alinhado bem no meio, na mesma altura */
+      flex-wrap: wrap;                /* Se a tela ficar pequena (como celular), os elementos pulam de linha para não amassar */
+      gap: 15px;                      /* Cria um espacinho de 15 pontos entre os brinquedos dessa sala */
+      margin-bottom: 20px;            /* Empurra o que estiver embaixo para não ficar grudado */
     }
 
+    /* Esse é o cantinho onde vão ficar guardados os botões */
     #container-botoes {
-      display: flex;
-      gap: 10px;
+      display: flex;                  /* Ativa o modo elástico para os botões ficarem em fila */
+      gap: 10px;                      /* Deixa um espacinho de 10 pontos entre um botão e outro */
     }
 
-    /* O container dos cards em formato de Grid (3 por linha no computador) */
+    /* Esse é o espaço onde vão aparecer as caixinhas (cards) de investimentos */
     #container-ativos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+      display: flex;                  /* Modo elástico para as caixinhas ficarem lado a lado */
+      flex-wrap: wrap;                /* Quando a linha encher (tiver 3 caixas), a quarta pula para a linha de baixo */
+      gap: 15px;                      /* Deixa um espacinho entre cada caixinha */
     }
 
+    /* Aqui estamos deixando o botão principal (o "Ver Mais") bonitão */
     .botao-principal {
-      display: block;
-      margin: 30px auto; /* Centraliza o botão Ver Mais no fundo */
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
+      display: block;                 /* Faz o botão se comportar como um bloco firme */
+      margin: 30px auto;              /* O "auto" faz mágica e centraliza o botão bem no meio da tela; o 30 dá espaço em cima e embaixo */
+      padding: 10px 20px;             /* Deixa o botão gordinho e confortável para clicar */
+      font-size: 16px;                /* Aumenta o tamanho da letra do botão */
+      cursor: pointer;                /* Faz a setinha do mouse virar aquela "mãozinha" de clique quando passamos por cima */
     }
-  </style>
-</head>
-<body>
+  </style> </head> <body>
 
   <h1>Ativos de Investimentos Brasileiros</h1>
   
   <div class="topo-controle">
+    
     <div id="container-botoes"></div>
     
     <input 
-      type="text" 
-      id="input-busca" 
-      placeholder="busca livre por texto" 
-      style="padding: 8px; width: 250px; border-radius: 4px; border: 1px solid #ccc;"
-    />
-  </div>
-  
-  <div id="container-ativos"></div>
+      type="text"                  id="input-busca"             placeholder="busca livre por texto" style="padding: 8px; width: 250px; border-radius: 4px; border: 1px solid #ccc;" /> </div> <div id="container-ativos"></div>
 
   <button id="botao-ver-mais" class="botao-principal">
     Ver Mais
   </button>
 
   <script src="script.js"></script>
-</body>
-</html>
+  
+</body> </html> ```

@@ -1,109 +1,44 @@
 /* RESET */
+/* Esse asterisco '*' é um feitiço poderoso que significa 'TODO MUNDO'. 
+   Ele aplica as regras abaixo em absolutamente todos os elementos do site. */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;          /* Tira o espaço que fica do lado de fora dos blocos para ninguém se empurrar */
+    padding: 0;         /* Tira o espaço que fica do lado de dentro para nada começar gordinho demais */
+    box-sizing: border-box; /* É uma regra mágica que ajuda o computador a calcular o tamanho das caixas certinho, sem que elas quebrem ou passem do limite da tela */
 }
 
 /* CORPO */
+/* Aqui decoramos o 'body', que é a grande folha em branco onde todo o site é desenhado */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #333;
-    padding: 20px;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; /* Se o computador tiver a letra Arial, usa ela. Se não, usa Helvetica. Se não tiver nenhuma, usa qualquer uma limpinha (sans-serif) */
+    background: #f4f4f4;    /* Pinta o fundo do site com um cinza bem clarinho e confortável para os olhos */
+    color: #333;            /* Deixa a cor dos textos em um cinza bem escuro (quase preto) */
+    padding: 20px;          /* Cria uma borda invisível de proteção de 20 pontos para o conteúdo não ficar colado na tela */
+    line-height: 1.6;       /* Dá um espaço bem legal entre as linhas do texto para não dar dor de cabeça ao ler */
 }
 
 /* ⚠️ DE: tag {} PARA: .tag-destaque {} (Virou classe) */
+/* O ponto '.' antes do nome significa que isso é uma CLASSE. É como um adesivo. 
+   Qualquer caixinha no HTML que ganhar o adesivo 'tag-destaque' vai ficar assim: */
 .tag-destaque{
-    display: block;
-    background: #2563eb;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    display: block;        /* Faz a caixinha se comportar como um bloco firme que ocupa a linha toda */
+    background: #2563eb;   /* Pinta o fundo desse bloco com um azul bem vivo e bonito */
+    color: white;          /* Deixa o texto de dentro dele branquinho */
+    padding: 10px;         /* Coloca uma almofada de 10 pontos por dentro para o texto respirar */
+    text-align: center;    /* Coloca o texto bem no meio (centralizado) */
+    font-size: 24px;       /* Deixa as letras bem grandinhas */
+    font-weight: bold;     /* Deixa o texto em negrito (gordinho) */
+    border-radius: 8px;    /* Arredonda os 4 cantos da caixa para não ficar pontuda */
+    margin-bottom: 20px;   /* Empurra o próximo brinquedo de baixo para longe em 20 pontos */
 }
 
 /* TÍTULOS */
-h1{ color: #2563eb; margin-top: 20px; }
-h2{ color: #16a34a; margin-top: 15px; }
-h3{ color: #dc2626; }
-h4{ color: #9333ea; }
-h5{ color: #ea580c; }
-h6{ color: #64748b; }
+/* Aqui decoramos os tamanhos dos títulos, do maior (h1) ao menorzinho (h6) */
+h1{ color: #2563eb; margin-top: 20px; } /* O título principal ganha a cor azul e ganha um espaço de 20 pontos em cima */
+h2{ color: #16a34a; margin-top: 15px; } /* O segundo título vira verde e ganha um espacinho em cima */
+h3{ color: #dc2626; } /* O terceiro título vira vermelho */
+h4{ color: #9333ea; } /* O quarto título vira roxo */
+h5{ color: #ea580c; } /* O quinto título vira laranja */
+h6{ color: #64748b; } /* O menor título de todos vira um cinza azulado */
 
-/* PARÁGRAFOS */
-p{
-    margin: 10px 0;
-}
-
-/* ⚠️ DE: pai {} PARA: .card-pai {} (Virou classe) */
-.card-pai{
-    display: block;
-    background: white;
-    border-left: 5px solid #2563eb;
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 8px;
-}
-
-/* ⚠️ DE: filho {} PARA: .texto-filho {} (Virou classe) */
-.texto-filho{
-    display: block;
-    color: #2563eb;
-    font-weight: bold;
-}
-
-/* NEGRITO E ITÁLICO */
-b, strong{
-    color: #dc2626;
-}
-
-i{
-    color: #16a34a;
-}
-
-/* LINHA */
-hr{
-    margin: 20px 0;
-    border: none;
-    height: 2px;
-    background: #ccc;
-}
-
-/* IMAGEM */
-img{
-    display: block;
-    width: 200px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,.2);
-}
-
-/* ÁUDIO E VÍDEO */
-audio, video{
-    display: block;
-    margin: 20px 0;
-    max-width: 100%;
-}
-
-/* CANVAS */
-canvas{
-    display: block;
-    margin: 20px 0;
-    border: 3px solid #2563eb;
-    background: white;
-    border-radius: 10px;
-}
-
-/* DIV GLOBAL */
-div{
-    background: white;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.1);
-}
+/* PARÁ
